@@ -19,10 +19,34 @@
         </div>
         
           <a href="" class=" hidden md:block text-white p-3 px-6 bg-[#f25f3a] rounded-full items-baseline hover:bg-red-400   "> Getting started </a>
-        
+          <!-- Hamburger Icon -->
+        <button
+        id="menu-btn"
+        class="block hamburger md:hidden focus:outline-none"
+      >
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+    </div>
+          
+          
+      </div>
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Pricing</a>
+          <a href="#">Product</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Community</a>
+        </div>
       </div>
     </nav>
-    <section >
+    <section  id="hero" >
       <!-- hero section  -->
       <div class="container mx-auto px-8 flex flex-col-reverse space-y-0 items-center mt-10  md:flex-row  ">
         <div  class=" flex flex-col  space-y-4 text-center md:w-1/2 "  > 
@@ -42,7 +66,7 @@
       </div>
     </section>
     <!-- feature section  -->
-    <section class=" mt-24">
+    <section class=" mt-24" id="features">
       <!-- flex container -->
       <div 
       class=" container flex  mt-4 mx-auto px-8 space-y-12 flex-col md:flex-row md:justify-center md:space-y-0">
@@ -136,7 +160,7 @@
         </div>
       </div>
     </section>
-    <section > 
+    <section id="testimonials "> 
       <!-- main testemonial -->
       <div class=" flex flex-col p-6 justify-center   mx-auto mt-32 "> 
         <h4 class=" text-center text-4xl font-bold "> What they've said </h4>
@@ -179,8 +203,8 @@
           bg-[#f25f3a]  hover:bg-red-400    " > Get Started </a>
         </div>
     </section  >
-    <!-- bottem section  -->
-    <section class=" bg-[#f25f3a] mt-12 py-24 ">
+    <!-- CTA section  -->
+    <section id="cta"class=" bg-[#f25f3a] mt-12 py-24 ">
       <!-- countainer  -->
       <div class=" flex flex-col justify-between items-center mx-auto space-y-12 container px-6  md:space-y-0 md:flex-row md:space-x-24  md:justify-between  md:w-full "> 
         <!-- header -->
@@ -257,5 +281,6 @@
     </div >
     
     </section>
+    <script src="js/script.js"></script>
   </body>
 </html>
